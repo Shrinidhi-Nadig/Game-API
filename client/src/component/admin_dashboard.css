@@ -1,0 +1,159 @@
+/* ==== Layout Styles ==== */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* ==== Sidebar ==== */
+.sidebar {
+  width: 250px;
+  background-color: #1f2937; /* gray-900 */
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #374151; /* gray-700 */
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 1rem;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.sidebar-nav li:hover {
+  color: #60a5fa; /* blue-400 */
+}
+
+/* ==== Navbar ==== */
+.navbar {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1f2937; /* gray-800 */
+}
+
+.logout-btn {
+  background-color: #ef4444; /* red-500 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626; /* red-600 */
+}
+
+/* ==== Main Content ==== */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-body {
+  padding: 1.5rem;
+}
+
+.dashboard-body h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* ==== Table ==== */
+.table-container {
+  overflow-x: auto;
+}
+
+.table {
+  min-width: 100%;
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: #f3f4f6; /* gray-100 */
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  text-align: center;
+}
+
+.table td.font-semibold {
+  font-weight: 600;
+}
+
+/* ==== Buttons ==== */
+.recharge-input {
+  border: 1px solid #d1d5db;
+  padding: 0.25rem 0.5rem;
+  width: 90px;
+  border-radius: 0.25rem;
+}
+
+.add-btn {
+  background-color: #22c55e; /* green-500 */
+  color: white;
+  padding: 0.25rem 0.75rem;
+  margin-left: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #16a34a; /* green-600 */
+}
+
+.play-btn {
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.play-btn:hover {
+  background-color: #2563eb; /* blue-600 */
+}
+
+.play-btn:disabled {
+  background-color: #9ca3af; /* gray-400 */
+  cursor: not-allowed;
+}
